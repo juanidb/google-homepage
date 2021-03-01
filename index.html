@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <Style>
-        #todo{
+        body{
+            font-family: arial, sans-serif;
         }
         #logo{
             display: block;
@@ -45,12 +46,62 @@
         box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
         border-color: rgba(223,225,229,0);
         }
-
+        ul {
+            list-style-type: none;
+            margin: 20px;
+            padding: 0;
+            overflow: hidden;
+            background-color:transparent;
+            font-size: 13px;
+            }
+            
+        li {
+            float: right;
+            padding-right: 15px;
+            }
+        li a {
+            display: block;
+            color: rgba(15, 15, 15, 0.705);
+            text-align: center;
+            padding: 1px 1px;
+            margin: 0;
+            text-decoration: none;
+            }
+        li:hover {
+                text-decoration: underline;
+        }
+        #image{
+            display: block;
+            height: 35px;
+            width: auto;
+            margin-top: -9px;
+        }
+        #nombre{
+            background-color: rgb(101, 11, 124);
+            padding-top: 15px;
+            color: white;
+            text-emphasis: inherit;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
 
     </Style>
 </head>
 <body>
-    <div id="todo">
+    <div id="nav-bar">
+        <ul>
+            <li><a class="active" href="#home" id="nombre">J</a></li>
+            <li><a href="#about">
+                <img 
+                 src="https://thumbs.dreamstime.com/b/dots-square-setting-options-icon-help-options-account-concept-trendy-flat-style-graphic-design-logo-web-site-social-dots-158886941.jpg"
+                 alt="dots"
+                 id="image"></a></li>
+            <li><a href="#contact">Imágenes</a></li>
+            <li><a href="#news">Gmail</a></li>
+        </ul>
+    </div>
+    <div id="main">
         <img 
         src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
         alt="Google logo"
