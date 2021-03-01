@@ -15,15 +15,36 @@
             margin-left: auto;
         }
         .buscador{
-            display: ;
-            margin-right: auto;
-            margin-left: auto;
+            text-align: center;
              }
-        #barra{
+        #btns{
             display: block;
-            margin-left: auto;
-            margin-right: auto;
-             }
+            position: relative;
+            text-align: center;
+            margin-top: 13px;
+            border: transparent;
+            
+        }
+        #offer{
+            display: block;
+            margin-top: 27px;
+            font-size: 15px;
+        }
+        #search{
+            border-style: solid;
+            border-color: #b2b2b2;
+            border-width: 1.5px;
+            align-self: center;
+            width: 550px;
+            height: 30px;
+            font-size: 18px;  
+            border-radius: 25px;
+        }
+        #search:hover{  
+         background-color: #fff;
+        box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+        border-color: rgba(223,225,229,0);
+        }
 
 
     </Style>
@@ -35,20 +56,20 @@
         alt="Google logo"
         id="logo">
         <div id="barra" class="buscador">
-            <label for="search" class="buscador">lupa</label>
+            
             <input type="text" name="search" id="search" class="buscador">
-            <label for="search" class="buscador">micro</label>
+            
             <br>
         </div>
-
-
-            <butto class="buscador">
+        <div id="btns">
+            <button class="buscador">
                 Buscar con Google
             </button>
             <button class="buscador">
                 Me siento con suerte
             </button>
-            <p class="buscador">Ofrecido por Google en: <a 
+        </div>
+            <p class="buscador" id="offer">Ofrecido por Google en: <a 
                 href="https://www.google.com/setprefs?sig=0_q_MgACrJeyP57HaPEWTFKyoqCyc%3D&hl=en&source=homepage&sa=X&ved=0ahUKEwjmpsXM1Y_vAhX7H7kGHUBcAsEQ2ZgBCA4">
             English
             </a>
